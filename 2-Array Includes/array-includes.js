@@ -1,15 +1,11 @@
-
 // Lesson : Array includes method in ES2016 (ES7)
 // Author : Akash Gutha
 
-const x = [NaN];
+const x = [ 'animals', 'cows', 'ducks' ]
 
-console.log(x.includes(NaN));
+console.log( x.includes('cows') )
 
-// older method
-console.log( x.indexOf(NaN) >= 0 )
+// old method
+console.log( x.indexOf('cows') >= 0 )
 
-console.log([-0].includes(+0))
-
-const y = Uint8Array.of(1,5,6,6,7,8)
-console.log( y.includes(8) )
+console.log( x.includes( 'goats' ) )
