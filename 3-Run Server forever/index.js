@@ -1,3 +1,6 @@
+// install forever globally using the following command
+// npm install --global forever
+
 var http = require("http");
 
 var server = http.createServer(function(req,res){
