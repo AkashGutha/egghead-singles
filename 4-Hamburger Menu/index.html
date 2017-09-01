@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animated Hamburger</title>
+
+    <style>
+        
+        .container{
+            margin: 48px;
+        }
+
+        .line{
+            width: 48px;
+            height: 6px;
+            margin: 6px 0;
+            background: black;
+
+            border-radius: 4px;
+        }
+
+        .container:hover > .line{
+            background: teal;
+            transition: 0.4s  ease-out;
+        }
+
+        .clicked > .line{
+            transform: rotateZ(30deg);
+            transition: 0.3s ease-in;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <div class="container" id="ham">
+
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+
+    </div>
+
+    <script>
+        var ham = document.getElementById("ham");
+        ham.onclick = function(){
+            ham.classList.toggle("clicked");
+        }
+    </script>
+
+</body>
+</html>
