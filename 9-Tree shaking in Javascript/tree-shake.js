@@ -37,7 +37,7 @@ fn_nodes.forEach(function(fn_node) {
   });
 }, this);
 
-// use estraverse to traverse adn delete the function.
+// use estraverse to traverse adn delete the unused functions.
 modified_ast = estraverse.replace(ast, {
   enter: function(node) {
     if (node.type === esprima.Syntax.FunctionDeclaration && used_fns.indexOf(node) === -1) {
