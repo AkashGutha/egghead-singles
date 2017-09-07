@@ -26,14 +26,10 @@ var used_fns = [];
 
 fn_nodes.forEach(function(fn_node) {
   call_nodes.forEach(function(call_node) {
-    if (fn_node.id.name === call_node.callee.name) {
-      // check if fn is already in the array
-      if (used_fns.indexOf(fn_node) >= 0) {
-        // donont do anything
-      } else {
+    if (fn_node.id.name === call_node.callee.name && used_fns.indexOf(fn_node) < 0) {
         used_fns.push(fn_node);
       }
-    }
+    
   });
 }, this);
 
