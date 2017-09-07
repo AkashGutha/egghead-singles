@@ -1,0 +1,10 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "escodegen": "^1.8.1",
+    "esprima": "^4.0.0",
+    "esprima-ast-utils": "0.0.6",
+    "estraverse": "^4.2.0"
+  }
+}
