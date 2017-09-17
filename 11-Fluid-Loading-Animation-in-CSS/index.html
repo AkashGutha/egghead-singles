@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loading animation</title>
+    <style>
+      body{
+        background: coral;
+      }
+      .loading-box{
+        margin: 250px;
+        height: 75px;
+        width: 75px;
+        border: 10px solid white;
+        transform: rotate(180deg);
+        animation: roll 2s infinite ease-out;
+      }
+      .loading-inner-box{
+        background: white;
+        height: 20px;
+        animation: fill 2s infinite ease-in ;
+      }
+  
+      @keyframes fill{
+        0%{
+          height: 0px;
+        }
+        40%{
+          height: 75px;
+        }
+        60%{
+          height: 75px;
+        }
+        100%{
+          height: 0px;
+        }
+      }
+  
+      @keyframes roll{
+        0%{
+          transform: rotate(180deg);
+        }
+        40%{
+          transform: rotate(180deg);
+        }
+        60%{
+          transform: rotate(360deg);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+      }
+  
+    </style>
+  </head>
+  <body>
+    <div class="container">
+  
+      <div class="loading-box">
+  
+        <div class="loading-inner-box">
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  </body>
+  </html>
