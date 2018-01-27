@@ -1,13 +1,10 @@
 import React, { Component, Fragment } from 'react';
 
 const HeaderFooter = (props) => {
-  const { name } = props;
-
   return (
     <Fragment>
       <div>
-        header
-        {name}
+        header {props.name}
       </div>
       <div>
         footer
@@ -16,14 +13,13 @@ const HeaderFooter = (props) => {
   );
 }
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div>
-        <HeaderFooter />
+        <HeaderFooter name="akash"/>
       </div>
     );
   }
 }
 
-export default App;
