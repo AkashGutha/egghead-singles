@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+body{
+  background: #222;
+}
+
+input{
+  display: flex;
+  padding: 20px;
+  margin: 200px 30px 0px 30px;
+  border: 1px solid gray;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'avenir next';
+  box-shadow: 5px 5px 0px lightgray;
+  border: none;
+}
+
+input:focus{
+  outline: dashed 4px palevioletred;
+}
+
+button{
+  margin: 50px auto;
+  padding: 20px;
+  color: white;
+  background: skyblue;
+  border: 1px solid gray;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'avenir next';
+  box-shadow: 5px 5px 0px teal;
+  border: none;
+  transition: all 0.2s;
+}
+
+button:hover{
+  cursor: pointer;
+  color: black;
+  background: white;
+  box-shadow: 5px 5px 0px lightgray;  
+}
+
+button:focus{
+  outline: none;
+}
